@@ -17,7 +17,7 @@ class Card:
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
-
+#standard deck class
 class StandardDeck:
     def __init__(self):
         self.cards = [Card(rank, suit)
