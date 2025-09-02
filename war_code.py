@@ -62,9 +62,9 @@ class WarGame:
             round_num += 1
 
         if self.player1:
-            print("Player 1 WINS the game! 🎉")
+            print("Player 1 WINS the game!")
         else:
-            print("Player 2 WINS the game! 🎉")
+            print("Player 2 WINS the game!")
 
 
 
