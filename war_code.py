@@ -1,8 +1,5 @@
 import random
 
-# -----------------------------
-# Standard Deck Class
-# -----------------------------
 class Card:
     suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10',
@@ -17,7 +14,7 @@ class Card:
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
-#standard deck class
+
 class StandardDeck:
     def __init__(self):
         self.cards = [Card(rank, suit)
@@ -29,9 +26,6 @@ class StandardDeck:
         return self.cards.pop(0) if self.cards else None
 
 
-# -----------------------------
-# War Game Logic
-# -----------------------------
 class WarGame:
     def __init__(self):
         deck = StandardDeck()
@@ -57,8 +51,7 @@ class WarGame:
             self.player2.extend([card1, card2])
         else:
             print("It's a tie! Both cards are discarded.\n")
-            # discard both cards (nothing added back)
-
+           
         return True
 
     def play_game(self):
@@ -74,9 +67,7 @@ class WarGame:
             print("Player 2 WINS the game! 🎉")
 
 
-# -----------------------------
-# Run Game
-# -----------------------------
+
 if __name__ == "__main__":
     game = WarGame()
     game.play_game()
